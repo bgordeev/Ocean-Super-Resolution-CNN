@@ -1,0 +1,83 @@
+# Default configuration for Ocean SST Super-Resolution
+# Copy this file and modify as needed
+
+# Data settings
+data:
+  # Directory paths
+  raw_dir: "data/raw"
+  coarsened_dir: "data/coarsened"
+  patches_dir: "data/patches"
+  
+  # Patch extraction settings
+  high_res_patch_size: 200
+  low_res_patch_size: 40
+  stride: 200
+  
+  # Data split
+  test_split: 0.1
+  random_seed: 42
+
+# Model settings
+model:
+  # Architecture: 'basic', 'enhanced', 'subpixel'
+  architecture: "basic"
+  
+  # Input/output channels (RGB = 3)
+  in_channels: 3
+  
+  # Upscaling factor
+  scale_factor: 5
+  
+  # Base number of filters
+  base_filters: 64
+  
+  # For enhanced model only
+  num_residual_blocks: 8
+
+# Training settings
+training:
+  # Number of epochs
+  epochs: 10
+  
+  # Batch size
+  batch_size: 32
+  
+  # Learning rate
+  learning_rate: 0.001
+  
+  # Optimizer: 'adam', 'sgd', 'rmsprop'
+  optimizer: "adam"
+  
+  # Loss function: 'mse', 'l1', 'perceptual'
+  loss_function: "mse"
+  
+  # Checkpoint settings
+  checkpoint_dir: "checkpoints"
+  save_every: 1  # Save checkpoint every N epochs
+  
+  # Visualization
+  visualize_every: 1  # Visualize every N epochs
+
+# Inference settings
+inference:
+  # Path to trained model checkpoint
+  checkpoint: "checkpoints/best_model.pth"
+  
+  # Output directory
+  output_dir: "results"
+
+# Hardware settings
+hardware:
+  # Device: 'auto', 'cpu', 'cuda', 'cuda:0', etc.
+  device: "auto"
+  
+  # Number of data loading workers
+  num_workers: 0
+
+# Logging settings
+logging:
+  # Log level: 'debug', 'info', 'warning', 'error'
+  level: "info"
+  
+  # Log file (null for console only)
+  file: null
