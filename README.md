@@ -174,13 +174,7 @@ Output (3×200×200)
 
 ## Results
 
-The model demonstrates the ability to enhance SST imagery, though some limitations remain:
-
-### Visual Comparison
-
-| Low Resolution (40×40) | Ground Truth (200×200) | Model Output (200×200) |
-|:----------------------:|:----------------------:|:----------------------:|
-| ![Low Res](docs/images/low_res_example.png) | ![Ground Truth](docs/images/high_res_example.png) | ![Output](docs/images/output_example.png) |
+The model demonstrates the ability to enhance SST imagery, though some limitations remain.
 
 ### Metrics
 
@@ -235,10 +229,6 @@ ocean-sst-superres/
     ├── __init__.py
     └── test_model.py        # Model tests
 ```
-
-## Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ### Development Setup
 
