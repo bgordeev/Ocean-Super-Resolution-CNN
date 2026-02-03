@@ -16,7 +16,6 @@ A Convolutional Neural Network (CNN) approach for enhancing the spatial resoluti
 - [Model Architecture](#model-architecture)
 - [Results](#results)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
