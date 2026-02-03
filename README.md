@@ -50,7 +50,7 @@ This project leverages Convolutional Neural Networks to perform **5× super-reso
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ocean-sst-superres.git
+   git clone [https://github.com/bgordeev/Ocean-Super-Resolution-CNN]
    cd ocean-sst-superres
    ```
 
